@@ -1,6 +1,14 @@
+set ratios 1:2:3
 # Luke's lf settings
 
+
+set previewer ~/.config/lf/preview
+set cleaner ~/.config/lf/cleaner
+
+
+
 # Basic vars
+
 set shell bash
 set shellopts '-eu'
 set ifs "\n"
@@ -70,6 +78,16 @@ cmd copyto ${{
 	notify-send "📋 File(s) copied." "File(s) copies to $dest."
 }}
 
+cmd touch ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	touch -- $fx
+}}
+
+cmd trash %trash-put $fx
+
+
+
 cmd setbg "$1"
 cmd bulkrename $vidir
 
@@ -102,6 +120,9 @@ map b $setbg $f
 map <c-e> down
 map <c-y> up
 map V push :!nvim<space>
+
+map t touch
+map u trash
 
 # Source Bookmarks
 source "~/.config/lf/shortcutrc"

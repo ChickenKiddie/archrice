@@ -1,5 +1,13 @@
 # Luke's config for the Zoomer Shell
 
+#alias lf="lfrun"
+alias vi="nvim"
+alias cl="clear"
+alias screenoff='sleep 1 && xset dpms force off'
+
+export PATH=/home/ck/scripts:$PATH
+
+
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "

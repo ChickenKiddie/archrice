@@ -1,7 +1,6 @@
-# The Voidrice (Luke Smith <https://lukesmith.xyz>'s dotfiles)
+# The Archrice (ChickenKiddie's dotfiles)
 
-These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
-[my YouTube channel](https://youtube.com/c/lukesmithxyz).
+These are the dotfiles deployed by [CKARBS].
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
@@ -35,11 +34,11 @@ as well.
 
 ## Install these dotfiles and all dependencies
 
-Use [LARBS](https://larbs.xyz) to autoinstall everything:
+Use [CKARBS](https://larbs.xyz) to autoinstall everything:
 
 ```
 curl -LO larbs.xyz/larbs.sh
 ```
 
 or clone the repo files directly to your home directory and install the
-[dependencies](https://github.com/LukeSmithxyz/LARBS/blob/master/progs.csv).
+[dependencies](https://github.com/ChickenKiddie/CKARBS/blob/master/progs.csv).
